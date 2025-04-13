@@ -4,10 +4,12 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ProjectGrid from "@/components/ProjectGrid";
 import Footer from "@/components/Footer";
+import MousePointer from "@/components/MousePointer";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <MousePointer />
       <Navbar />
       <Hero />
       <ProjectGrid />
