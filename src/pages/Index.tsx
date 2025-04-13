@@ -17,7 +17,7 @@ const Index = () => {
         <div className="container-custom">
           <div className="flex flex-col lg:flex-row gap-12">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl font-bold mb-4">About Me</h2>
+              <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">About Me</h2>
               <div className="space-y-4 text-lg">
                 <p>
                   I'm a DevOps Engineer with 6+ years of experience building scalable, 
@@ -47,7 +47,7 @@ const Index = () => {
                   ].map((skill, index) => (
                     <span 
                       key={index}
-                      className="px-3 py-1 bg-background rounded-full text-sm"
+                      className="px-3 py-1 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-full text-sm shadow-sm hover:shadow-md transition-all"
                     >
                       {skill}
                     </span>
@@ -57,53 +57,12 @@ const Index = () => {
             </div>
             
             <div className="lg:w-1/2">
-              <div className="aspect-square rounded-lg overflow-hidden">
+              <div className="aspect-square rounded-lg overflow-hidden shadow-xl transform hover:scale-[1.01] transition-transform duration-300 border-4 border-white/20">
                 <img 
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a" 
                   alt="Alex Johnson - DevOps Engineer" 
                   className="w-full h-full object-cover"
                 />
-              </div>
-            </div>
-          </div>
-          
-          <div className="mt-16 pt-8 border-t border-border/40">
-            <h3 className="text-xl font-semibold mb-4">Experience</h3>
-            <div className="space-y-8">
-              <div>
-                <div className="flex justify-between items-start mb-2">
-                  <h4 className="text-lg font-medium">Senior DevOps Engineer</h4>
-                  <span className="text-sm text-muted-foreground">2021 - Present</span>
-                </div>
-                <h5 className="text-primary mb-2">TechFusion Inc.</h5>
-                <p className="text-muted-foreground">
-                  Lead cloud infrastructure and CI/CD initiatives, manage Kubernetes clusters, 
-                  implement security best practices, and mentor junior engineers on DevOps methodologies.
-                </p>
-              </div>
-              
-              <div>
-                <div className="flex justify-between items-start mb-2">
-                  <h4 className="text-lg font-medium">Cloud Infrastructure Engineer</h4>
-                  <span className="text-sm text-muted-foreground">2018 - 2021</span>
-                </div>
-                <h5 className="text-primary mb-2">CloudScale Systems</h5>
-                <p className="text-muted-foreground">
-                  Designed and maintained AWS infrastructure using Terraform, implemented 
-                  containerization strategies, and automated deployment pipelines for microservices architectures.
-                </p>
-              </div>
-              
-              <div>
-                <div className="flex justify-between items-start mb-2">
-                  <h4 className="text-lg font-medium">Systems Administrator</h4>
-                  <span className="text-sm text-muted-foreground">2016 - 2018</span>
-                </div>
-                <h5 className="text-primary mb-2">DataSphere Solutions</h5>
-                <p className="text-muted-foreground">
-                  Managed on-premise infrastructure, virtualized environments, and began 
-                  early DevOps initiatives by implementing configuration management with Ansible.
-                </p>
               </div>
             </div>
           </div>

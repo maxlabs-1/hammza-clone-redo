@@ -4,11 +4,14 @@ import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center pt-16">
+    <section className="min-h-screen flex flex-col justify-center pt-16 bg-gradient-to-b from-white to-secondary/30">
       <div className="container-custom">
         <div className="max-w-3xl animate-fade-in">
+          <div className="mb-2 inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
+            DevOps Engineer
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Hi, I'm <span className="text-primary">Alex Johnson</span>. 
+            Hi, I'm <span className="gradient-text">Alex Johnson</span>. 
             <br />
             A DevOps Engineer based in Seattle.
           </h1>
@@ -21,13 +24,13 @@ const Hero = () => {
           <div className="flex flex-wrap gap-4">
             <a 
               href="#work" 
-              className="px-6 py-3 bg-primary text-white rounded-md font-medium hover:bg-primary/90 transition-colors"
+              className="px-6 py-3 bg-gradient-to-r from-primary to-blue-600 text-white rounded-md font-medium hover:opacity-90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
               View my projects
             </a>
             <a 
               href="#contact" 
-              className="px-6 py-3 border border-input rounded-md font-medium hover:bg-secondary transition-colors"
+              className="px-6 py-3 border border-input rounded-md font-medium hover:bg-primary/5 transition-all shadow hover:shadow-md hover:-translate-y-0.5"
             >
               Get in touch
             </a>
@@ -35,11 +38,15 @@ const Hero = () => {
         </div>
         
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 hidden md:block animate-bounce">
-          <a href="#work" className="flex items-center gap-2 text-sm font-medium">
+          <a href="#work" className="flex items-center gap-2 text-sm font-medium bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-md hover:bg-white">
             Scroll down <ArrowDown size={16} />
           </a>
         </div>
       </div>
+      
+      {/* Abstract shapes */}
+      <div className="absolute top-20 right-0 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-20 left-10 w-72 h-72 bg-purple-400/10 rounded-full blur-3xl -z-10"></div>
     </section>
   );
 };
