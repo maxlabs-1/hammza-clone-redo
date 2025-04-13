@@ -8,13 +8,14 @@ const Hero = () => {
       <div className="container-custom">
         <div className="max-w-3xl animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Hi, I'm <span className="text-primary">Your Name</span>. 
+            Hi, I'm <span className="text-primary">Alex Johnson</span>. 
             <br />
-            A digital designer and developer from Location.
+            A DevOps Engineer based in Seattle.
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-            I specialize in creating beautiful, functional websites and digital
-            experiences that help businesses achieve their goals.
+            I specialize in automating infrastructure, optimizing CI/CD pipelines,
+            and implementing cloud-native solutions to help businesses scale reliably
+            and securely.
           </p>
           
           <div className="flex flex-wrap gap-4">
@@ -22,7 +23,7 @@ const Hero = () => {
               href="#work" 
               className="px-6 py-3 bg-primary text-white rounded-md font-medium hover:bg-primary/90 transition-colors"
             >
-              View my work
+              View my projects
             </a>
             <a 
               href="#contact" 

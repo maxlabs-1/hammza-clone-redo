@@ -24,7 +24,7 @@ const Navbar = () => {
       )}
     >
       <div className="container-custom flex items-center justify-between">
-        <a href="/" className="text-xl font-bold tracking-tight">Your Name</a>
+        <a href="/" className="text-xl font-bold tracking-tight">Alex Johnson</a>
         
         {/* Mobile menu button */}
         <button
@@ -37,7 +37,7 @@ const Navbar = () => {
         {/* Desktop navigation */}
         <nav className="hidden lg:flex items-center gap-6">
           <a href="#work" className="text-sm font-medium hover:text-primary/80 transition-colors">
-            Work
+            Projects
           </a>
           <a href="#about" className="text-sm font-medium hover:text-primary/80 transition-colors">
             About
@@ -56,7 +56,7 @@ const Navbar = () => {
                 className="text-xl font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                Work
+                Projects
               </a>
               <a 
                 href="#about" 

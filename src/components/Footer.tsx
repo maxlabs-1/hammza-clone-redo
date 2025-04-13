@@ -14,16 +14,16 @@ const Footer = () => {
           <div className="max-w-lg">
             <h2 className="text-3xl font-bold mb-4">Let's work together</h2>
             <p className="text-lg text-muted-foreground mb-6">
-              I'm currently available for freelance work. If you have a project
-              that you want to get started, think you need my help with something,
-              or just want to say hello, then get in touch.
+              I'm currently available for new opportunities in DevOps and cloud infrastructure roles.
+              If you're looking for someone to help optimize your development processes, 
+              scale your infrastructure, or implement modern CI/CD practices, let's connect.
             </p>
             
             <a 
-              href="mailto:your.email@example.com" 
+              href="mailto:alex.johnson@example.com" 
               className="text-lg font-medium inline-flex items-center hover:text-primary transition-colors"
             >
-              your.email@example.com
+              alex.johnson@example.com
             </a>
           </div>
           
@@ -32,7 +32,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a 
-                  href="https://linkedin.com/in/yourusername" 
+                  href="https://linkedin.com/in/alexjohnsondevops" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
@@ -42,7 +42,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://github.com/yourusername" 
+                  href="https://github.com/alexjohnson-devops" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
@@ -52,17 +52,17 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://dribbble.com/yourusername" 
+                  href="https://dev.to/alexjohnson" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
                 >
-                  Dribbble
+                  Dev.to
                 </a>
               </li>
               <li>
                 <a 
-                  href="https://twitter.com/yourusername" 
+                  href="https://twitter.com/alexj_devops" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
@@ -76,7 +76,7 @@ const Footer = () => {
         
         <div className="flex flex-col sm:flex-row justify-between items-center mt-16 pt-8 border-t">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Alex Johnson. All rights reserved.
           </p>
           
           <button 

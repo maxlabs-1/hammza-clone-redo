@@ -2,38 +2,38 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 
-// Sample project data - replace with your actual projects
+// DevOps Engineer project data
 const projects = [
   {
     id: 1,
-    title: "E-commerce Website Redesign",
-    description: "Complete redesign of an online retail platform focused on user experience",
-    imageUrl: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-    tags: ["Web Design", "UI/UX", "E-commerce"],
+    title: "Cloud Migration & Modernization",
+    description: "Led the migration of legacy on-premise infrastructure to AWS cloud with containerized microservices",
+    imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+    tags: ["AWS", "Docker", "Kubernetes", "Terraform"],
     link: "#"
   },
   {
     id: 2,
-    title: "Mobile Banking App",
-    description: "A secure and intuitive mobile application for online banking services",
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
-    tags: ["Mobile App", "UI/UX", "Fintech"],
+    title: "CI/CD Pipeline Automation",
+    description: "Designed and implemented a fully automated CI/CD pipeline reducing deployment time by 70%",
+    imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    tags: ["Jenkins", "GitHub Actions", "ArgoCD", "GitOps"],
     link: "#"
   },
   {
     id: 3,
-    title: "Restaurant Booking System",
-    description: "Online reservation platform with integrated payment processing",
-    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-    tags: ["Web App", "Full Stack", "Business"],
+    title: "Infrastructure as Code Implementation",
+    description: "Developed IaC templates for consistent and repeatable infrastructure provisioning across environments",
+    imageUrl: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3",
+    tags: ["Terraform", "CloudFormation", "Ansible", "Packer"],
     link: "#"
   },
   {
     id: 4,
-    title: "Personal Portfolio Theme",
-    description: "Minimalist portfolio theme for creative professionals",
-    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    tags: ["Web Design", "Theme", "Portfolio"],
+    title: "Monitoring & Observability Platform",
+    description: "Built a comprehensive monitoring solution for microservices architecture with real-time alerts",
+    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    tags: ["Prometheus", "Grafana", "ELK Stack", "SRE"],
     link: "#"
   }
 ];
@@ -43,10 +43,10 @@ const ProjectGrid = () => {
     <section id="work" className="py-24">
       <div className="container-custom">
         <div className="mb-12">
-          <h2 className="text-3xl font-bold mb-4">Selected Work</h2>
+          <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            Explore a collection of my recent projects spanning web design, development,
-            and digital experiences.
+            Explore a selection of my recent DevOps and cloud infrastructure projects
+            that demonstrate my expertise in automation, reliability, and scalability.
           </p>
         </div>
         

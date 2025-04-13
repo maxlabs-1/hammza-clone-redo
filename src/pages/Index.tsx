@@ -20,16 +20,19 @@ const Index = () => {
               <h2 className="text-3xl font-bold mb-4">About Me</h2>
               <div className="space-y-4 text-lg">
                 <p>
-                  I'm a multidisciplinary designer and developer with over X years of 
-                  experience creating digital products that are both functional and beautiful.
+                  I'm a DevOps Engineer with 6+ years of experience building scalable, 
+                  resilient infrastructure and automating development workflows for 
+                  companies ranging from startups to large enterprises.
                 </p>
                 <p>
-                  My approach combines aesthetic sensibility with technical expertise, 
-                  ensuring that the end result not only looks good but performs excellently.
+                  My approach combines deep technical knowledge with a focus on business 
+                  outcomes, ensuring that infrastructure decisions align with organizational 
+                  goals while maintaining reliability and security.
                 </p>
                 <p>
-                  When I'm not designing or coding, you can find me exploring new technologies,
-                  contributing to open source projects, or enjoying outdoor activities.
+                  I'm passionate about cloud-native technologies, infrastructure as code, 
+                  and creating a culture of DevOps that enables teams to deliver value 
+                  faster and more reliably.
                 </p>
               </div>
               
@@ -37,9 +40,10 @@ const Index = () => {
                 <h3 className="text-xl font-semibold mb-3">Skills & Expertise</h3>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    "Web Design", "UI/UX", "Frontend Development",
-                    "React", "TypeScript", "Tailwind CSS",
-                    "Figma", "User Research", "Responsive Design"
+                    "AWS", "Azure", "Docker", "Kubernetes",
+                    "Terraform", "Ansible", "Jenkins", "GitHub Actions",
+                    "Python", "Bash", "Prometheus", "Grafana",
+                    "ELK Stack", "CI/CD", "Infrastructure as Code", "SRE"
                   ].map((skill, index) => (
                     <span 
                       key={index}
@@ -55,8 +59,8 @@ const Index = () => {
             <div className="lg:w-1/2">
               <div className="aspect-square rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1438886183900-e79ec0057170" 
-                  alt="Your Name" 
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a" 
+                  alt="Alex Johnson - DevOps Engineer" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -68,37 +72,37 @@ const Index = () => {
             <div className="space-y-8">
               <div>
                 <div className="flex justify-between items-start mb-2">
-                  <h4 className="text-lg font-medium">Senior Designer</h4>
-                  <span className="text-sm text-muted-foreground">2020 - Present</span>
+                  <h4 className="text-lg font-medium">Senior DevOps Engineer</h4>
+                  <span className="text-sm text-muted-foreground">2021 - Present</span>
                 </div>
-                <h5 className="text-primary mb-2">Company Name</h5>
+                <h5 className="text-primary mb-2">TechFusion Inc.</h5>
                 <p className="text-muted-foreground">
-                  Led design initiatives for various client projects, collaborated with 
-                  development teams, and established design systems and guidelines.
+                  Lead cloud infrastructure and CI/CD initiatives, manage Kubernetes clusters, 
+                  implement security best practices, and mentor junior engineers on DevOps methodologies.
                 </p>
               </div>
               
               <div>
                 <div className="flex justify-between items-start mb-2">
-                  <h4 className="text-lg font-medium">UI/UX Designer</h4>
-                  <span className="text-sm text-muted-foreground">2018 - 2020</span>
+                  <h4 className="text-lg font-medium">Cloud Infrastructure Engineer</h4>
+                  <span className="text-sm text-muted-foreground">2018 - 2021</span>
                 </div>
-                <h5 className="text-primary mb-2">Previous Company</h5>
+                <h5 className="text-primary mb-2">CloudScale Systems</h5>
                 <p className="text-muted-foreground">
-                  Created user interfaces for web and mobile applications, conducted 
-                  user research, and developed interactive prototypes.
+                  Designed and maintained AWS infrastructure using Terraform, implemented 
+                  containerization strategies, and automated deployment pipelines for microservices architectures.
                 </p>
               </div>
               
               <div>
                 <div className="flex justify-between items-start mb-2">
-                  <h4 className="text-lg font-medium">Junior Web Developer</h4>
+                  <h4 className="text-lg font-medium">Systems Administrator</h4>
                   <span className="text-sm text-muted-foreground">2016 - 2018</span>
                 </div>
-                <h5 className="text-primary mb-2">First Company</h5>
+                <h5 className="text-primary mb-2">DataSphere Solutions</h5>
                 <p className="text-muted-foreground">
-                  Developed responsive websites, implemented front-end designs, and 
-                  collaborated with design and marketing teams.
+                  Managed on-premise infrastructure, virtualized environments, and began 
+                  early DevOps initiatives by implementing configuration management with Ansible.
                 </p>
               </div>
             </div>
