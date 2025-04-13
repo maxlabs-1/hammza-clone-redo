@@ -1,6 +1,6 @@
 
 import React from "react";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, Linkedin, Github, FileText, Twitter, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -35,9 +35,9 @@ const Footer = () => {
                   href="https://linkedin.com/in/alexjohnsondevops" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-primary transition-colors flex items-center gap-2"
                 >
-                  LinkedIn
+                  <Linkedin size={18} /> LinkedIn
                 </a>
               </li>
               <li>
@@ -45,9 +45,9 @@ const Footer = () => {
                   href="https://github.com/alexjohnson-devops" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-primary transition-colors flex items-center gap-2"
                 >
-                  GitHub
+                  <Github size={18} /> GitHub
                 </a>
               </li>
               <li>
@@ -55,9 +55,19 @@ const Footer = () => {
                   href="https://dev.to/alexjohnson" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-primary transition-colors flex items-center gap-2"
                 >
-                  Dev.to
+                  <FileText size={18} /> Dev.to
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://medium.com/@alexjohnson-devops" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors flex items-center gap-2"
+                >
+                  <MessageCircle size={18} /> Medium
                 </a>
               </li>
               <li>
@@ -65,9 +75,9 @@ const Footer = () => {
                   href="https://twitter.com/alexj_devops" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-primary transition-colors flex items-center gap-2"
                 >
-                  Twitter
+                  <Twitter size={18} /> Twitter
                 </a>
               </li>
             </ul>
