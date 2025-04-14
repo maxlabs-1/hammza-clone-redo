@@ -13,7 +13,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Hi, I'm <span className="gradient-text">Mujtaba Ahmad</span>. 
             <br />
-            A DevOps Engineer based in Seattle.
+            A DevOps Engineer based in Lahore.
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
             I specialize in automating infrastructure, optimizing CI/CD pipelines,
@@ -38,7 +38,7 @@ const Hero = () => {
         </div>
         
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 hidden md:block animate-bounce">
-          <a href="#work" className="flex items-center gap-2 text-sm font-medium glass-card px-4 py-2 rounded-full shadow-lg hover:shadow-xl hover:bg-accent/20">
+          <a href="#work" className="flex items-center gap-2 text-sm font-medium glass-card px-4 py-2 rounded-full shadow-lg hover:shadow-xl hover:bg-accent/20 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/20">
             Scroll down <ArrowDown size={16} className="text-primary" />
           </a>
         </div>

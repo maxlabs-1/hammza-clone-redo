@@ -1,7 +1,7 @@
 
 import React from "react";
 import { cn } from "@/lib/utils";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
@@ -23,34 +23,32 @@ const ProjectCard = ({
   return (
     <div 
       className={cn(
-        "group relative overflow-hidden rounded-xl border bg-white/60 backdrop-blur-sm transition-all hover:shadow-xl animate-fade-up hover:-translate-y-1 duration-300",
+        "group relative overflow-hidden rounded-xl border bg-secondary/30 backdrop-blur-sm transition-all hover:shadow-xl animate-fade-up hover:-translate-y-1 duration-300",
         className
       )}
     >
-      <a href={link} className="block">
+      <a href={link} className="block h-full flex flex-col">
         <div className="relative aspect-[16/10] overflow-hidden">
-          <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+          <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
           <img
             src={imageUrl}
             alt={title}
             className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
           />
+          <div className="absolute top-4 right-4 text-foreground/70 group-hover:text-primary transition-colors bg-black/40 p-1.5 rounded-full group-hover:bg-primary/20 backdrop-blur-sm z-20">
+            <ExternalLink size={18} />
+          </div>
         </div>
         
-        <div className="p-5">
-          <div className="flex justify-between items-start mb-2">
-            <h3 className="text-xl font-semibold gradient-text">{title}</h3>
-            <span className="text-foreground/70 group-hover:text-primary transition-colors bg-white/80 p-1.5 rounded-full group-hover:bg-primary/10">
-              <ArrowUpRight size={18} />
-            </span>
-          </div>
-          <p className="text-muted-foreground text-sm mb-4">{description}</p>
+        <div className="p-5 flex flex-col flex-grow">
+          <h3 className="text-xl font-semibold gradient-text mb-2">{title}</h3>
+          <p className="text-muted-foreground text-sm mb-4 flex-grow">{description}</p>
           
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mt-auto">
             {tags.map((tag, index) => (
               <span
                 key={index}
-                className="text-xs px-2.5 py-0.5 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 text-blue-800 rounded-full hover:from-blue-500/20 hover:to-purple-500/20 transition-colors"
+                className="text-xs px-2.5 py-0.5 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 text-blue-400 rounded-full hover:from-blue-500/20 hover:to-purple-500/20 transition-colors"
               >
                 {tag}
               </span>
