@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize Lucide icons
   lucide.createIcons();
@@ -77,9 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add ripple effect on click
   document.addEventListener('click', (e) => {
     const ripple = document.createElement('div');
-    ripple.classList.add('cursor-rip
-
-ple');
+    ripple.classList.add('cursor-ripple');
     ripple.style.left = `${e.clientX}px`;
     ripple.style.top = `${e.clientY}px`;
     document.body.appendChild(ripple);
@@ -113,4 +110,3 @@ ple');
   `;
   document.head.appendChild(style);
 });
-
